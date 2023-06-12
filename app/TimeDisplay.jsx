@@ -17,7 +17,7 @@ const TimeDisplay = () => {
 	}, []);
 
 	return (
-		<div className="timeContainer">
+		<div className="play-pause-button">
 			<div>{currentTime}</div>
 		</div>
 	);

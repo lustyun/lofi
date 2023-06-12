@@ -1,5 +1,6 @@
-import AudioPlayer from "./AudioPlayer";
+import AudioPlayer from "./audioplayer";
 import TimeDisplay from "./TimeDisplay";
+import VideoToggle from "./background";
 
 export default function App() {
 	const audioSources = [
@@ -16,11 +17,10 @@ export default function App() {
 		"lofi/storm-clouds-purpple-cat.mp3",
 		"lofi/Winter-Night.mp3",
 	];
+
 	return (
 		<div className="container">
-			<video className="background-video" autoPlay loop muted playsInline>
-				<source src="/outside.mp4" type="video/mp4" />
-			</video>
+			<VideoToggle />
 			<div className="audio-controls">
 				<AudioPlayer sources={audioSources} />
 			</div>

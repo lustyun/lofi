@@ -37,6 +37,7 @@ audio::-webkit-media-controls-panel {
 	width: 150px;
 	text-align: center;
 	padding: 10px 30px;
+	opacity: 90%;
 	font-size: 16px;
 	cursor: pointer;
 	transition: background-color 0.3s;
