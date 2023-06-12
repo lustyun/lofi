@@ -1,6 +1,6 @@
 import AudioPlayer from "./AudioPlayer";
 import TimeDisplay from "./TimeDisplay";
-import Background from "./Background";
+import Background from "./background";
 
 export default function App() {
 	const audioSources = [
