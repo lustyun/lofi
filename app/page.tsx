@@ -1,6 +1,6 @@
-import AudioPlayer from "./audioplayer";
+import AudioPlayer from "./AudioPlayer";
 import TimeDisplay from "./TimeDisplay";
-import VideoToggle from "./background";
+import VideoToggle from "./Background";
 
 export default function App() {
 	const audioSources = [
