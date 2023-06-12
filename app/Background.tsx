@@ -11,9 +11,6 @@ const Background = () => {
 		);
 		setKey(key + 1);
 	};
-	const handleVideoCanPlayThrough = () => {
-		setIsLoaded(true);
-	};
 
 	return (
 		<div>
@@ -27,8 +24,7 @@ const Background = () => {
 				preload="auto"
 				muted
 				playsInline
-				key={key}
-				onCanPlayThrough={handleVideoCanPlayThrough}>
+				key={key}>
 				<source src={videoSource} type="video/mp4" />
 			</video>
 		</div>
