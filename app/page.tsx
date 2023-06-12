@@ -1,6 +1,6 @@
 import AudioPlayer from "./AudioPlayer";
 import TimeDisplay from "./TimeDisplay";
-import VideoToggle from "./Background";
+import Background from "./Background";
 
 export default function App() {
 	const audioSources = [
@@ -20,7 +20,7 @@ export default function App() {
 
 	return (
 		<div className="container">
-			<VideoToggle />
+			<Background />
 			<div className="audio-controls">
 				<AudioPlayer sources={audioSources} />
 			</div>

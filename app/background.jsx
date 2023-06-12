@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const VideoToggle = () => {
+const Background = () => {
 	const [videoSource, setVideoSource] = useState("outside-rain.mp4");
 	const [key, setKey] = useState(0);
 	const [isLoaded, setIsLoaded] = useState(false);
@@ -36,4 +36,4 @@ const VideoToggle = () => {
 	);
 };
 
-export default VideoToggle;
+export default Background;
