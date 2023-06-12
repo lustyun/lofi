@@ -7,7 +7,7 @@ interface AudioPlayerProps {
 
 const AudioPlayer = ({ sources }: AudioPlayerProps) => {
 	const [currentSourceIndex, setCurrentSourceIndex] = useState(0);
-	const [isPlaying, setIsPlaying] = useState(false);
+	const [isPlaying, setIsPlaying] = useState(true);
 	const audioRef = useRef<HTMLAudioElement | null>(null);
 
 	const togglePlay = () => {
