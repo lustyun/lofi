@@ -4,7 +4,6 @@ import React, { useState } from "react";
 const Background = () => {
 	const [videoSource, setVideoSource] = useState("outside-rain.mp4");
 	const [key, setKey] = useState(0);
-	const [isLoaded, setIsLoaded] = useState(false);
 
 	const switchVideo = () => {
 		setVideoSource(
@@ -17,7 +16,7 @@ const Background = () => {
 	};
 
 	return (
-		<div className={`video-container ${isLoaded ? "loaded" : ""}`}>
+		<div>
 			<button className="play-pause-button" onClick={switchVideo}>
 				Weather
 			</button>
