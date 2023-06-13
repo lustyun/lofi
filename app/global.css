@@ -37,7 +37,7 @@ audio::-webkit-media-controls-panel {
 	width: 170px;
 	text-align: center;
 	padding: 10px 30px;
-	opacity: 90%;
+	opacity: 80%;
 	font-size: 16px;
 	cursor: pointer;
 	transition: background-color 0.3s;
@@ -65,7 +65,7 @@ audio::-webkit-media-controls-panel {
 .time {
 	display: flex;
 	position: relative;
-	top: 100px;
+	top: 20px;
 	justify-content: center;
 	align-items: center;
 }
@@ -73,8 +73,10 @@ audio::-webkit-media-controls-panel {
 	background-color: #8f5331;
 	border-radius: 10px;
 	border: none;
+	left: 0;
+	margin: 10px;
 	text-align: center;
 	padding: 10px 30px;
-	opacity: 90%;
+	opacity: 80%;
 	font-size: 18px;
 }

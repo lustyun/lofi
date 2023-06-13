@@ -17,9 +17,11 @@ const TimeDisplay = () => {
 	}, []);
 
 	return (
-		<div className="play-pause-button time">
-			<div>{currentTime}</div>
-		</div>
+		currentTime && (
+			<div className="play-pause-button time">
+				<div>{currentTime}</div>
+			</div>
+		)
 	);
 };
 
