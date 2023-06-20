@@ -29,6 +29,7 @@ const AudioPlayer = ({ sources }: AudioPlayerProps) => {
 				return 0; // Wrap around to the first source if at the end
 			}
 		});
+		setIsPlaying(true);
 	};
 
 	const playPrev = () => {
@@ -40,6 +41,7 @@ const AudioPlayer = ({ sources }: AudioPlayerProps) => {
 				return sources.length - 1; // Wrap around to the last source if at the beginning
 			}
 		});
+		setIsPlaying(true);
 	};
 
 	const capitalizeFirstLetter = (word: string) => {
