@@ -2,31 +2,40 @@
 import React, { useState } from "react";
 
 const Background = () => {
-	const [videoSource, setVideoSource] = useState("outside-rain.mp4");
-	const [key, setKey] = useState(0);
+	const [activeVideoIndex, setActiveVideoIndex] = useState(0);
+	const [videoSources, setVideoSources] = useState([
+		"outside.mp4",
+		"inside_sun.mp4",
+		"outside_sun.mp4",
+		"outside-rain.mp4",
+		"inside.mp4"
+	]);
 
-	const switchVideo = () => {
-		setVideoSource(
-			videoSource === "outside.mp4" ? "outside-rain.mp4" : "outside.mp4"
-		);
-		setKey(key + 1);
-	};
+	const handleToggleVideo = () => {
+		const nextIndex = (activeVideoIndex + 1) % videoSources.length;
+		setActiveVideoIndex(nextIndex);
+	  };
 
 	return (
 		<div>
-			<button className="play-pause-button" onClick={switchVideo}>
-				Weather
+			{videoSources.map((videoSource, index) => (
+				<video
+					key={index}
+					className={`background-video ${
+						index === activeVideoIndex ? "active" : ""
+					}`}
+					src={videoSource}
+					autoPlay
+					loop
+					preload="auto"
+					muted
+					playsInline
+				/>
+			))}
+
+			<button className="play-pause-button" onClick={handleToggleVideo}>
+				Scenes
 			</button>
-			<video
-				className="background-video"
-				autoPlay
-				loop
-				preload="auto"
-				muted
-				playsInline
-				key={key}>
-				<source src={videoSource} type="video/mp4" />
-			</video>
 		</div>
 	);
 };
