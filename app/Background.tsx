@@ -8,13 +8,13 @@ const Background = () => {
 		"inside_sun.mp4",
 		"outside_sun.mp4",
 		"outside-rain.mp4",
-		"inside.mp4"
+		"inside.mp4",
 	]);
 
 	const handleToggleVideo = () => {
 		const nextIndex = (activeVideoIndex + 1) % videoSources.length;
 		setActiveVideoIndex(nextIndex);
-	  };
+	};
 
 	return (
 		<div>

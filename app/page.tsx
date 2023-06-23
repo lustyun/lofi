@@ -16,6 +16,18 @@ export default function App() {
 		"lofi/Still-Awake-Lofi-Study-Music.mp3",
 		"lofi/storm-clouds-purpple-cat.mp3",
 		"lofi/Winter-Night.mp3",
+		"lofi/Die Legende.mp3",
+		"lofi/Difficult.mp3",
+		"lofi/Gold and Oden.mp3",
+		"lofi/I Want to Live.mp3",
+		"lofi/Luffys Fierce Attack.mp3",
+		"lofi/Mother Sea.mp3",
+		"lofi/Mothers Love.mp3",
+		"lofi/Overtaken.mp3",
+		"lofi/The Very, Very, Very Strongest.mp3",
+		"lofi/To the Grand Line.mp3",
+		"lofi/We Are!.mp3",
+		"lofi/We Did It!.mp3"
 	];
 
 	return (
